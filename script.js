@@ -2,7 +2,7 @@ function indexOfIgnoreCase(s1, s2) {
   // write your code here
 	    let lengthToFind = s2.length
         for(let i=0; i<s1.length; i++){
-            if(s2 == s1.substring(i,i+lengthToFind)) return i || -1
+            if(s2.toLowerCase() == s1.toLowerCase().substring(i,i+lengthToFind)) return i || -1
         }
 }
 
